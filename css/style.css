@@ -33,6 +33,33 @@ body {
   font-family: "Festive", cursive;
 }
 
+.nav {
+  background-color: #333;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+.navitem {
+  display: flexbox;
+  text-decoration: none;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 14px 16px;
+  float: left;
+}
+
+.navitem:hover a {
+  background-color: #f1f1f1;
+}
+
+.navitem:hover:not(.active) {
+  background-color: #aaa;
+}
+
+.navitem a.active {
+  background-color: #04aa6d;
+}
+
 .card h2,
 h5 {
   font-family: "Space Grotesk", sans-serif;
@@ -86,6 +113,11 @@ h5 {
   text-align: center;
   background: #ddd;
   margin-top: 20px;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.footer a {
+  text-decoration: none;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
